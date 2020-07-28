@@ -6,6 +6,8 @@ func WatermarkRemover(url string)(string, error)  {
 
 	videoLink, err := getVideoLink(videoId)
 
-	return videoLink, err
+	downloadLink, err := getVideoDownloadLink(videoLink)
+
+	return downloadLink, err
 }
 
